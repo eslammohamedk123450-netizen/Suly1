@@ -39,7 +39,7 @@ function updateText() {
 }
 
 function renderSkills() {
-  document.querySelector('#skills-list').innerHTML = current.skills.map((skill) => `<article class="skill-row"><span class="skill-mark">${skill.mark}</span><div class="skill-name"><h3>${skill.name}</h3><p>${skill.detail}</p></div><span class="skill-level">${skill.level}</span></article>`).join('');
+  document.querySelector('#skills-list').innerHTML = current.skills.map((skill) => `<article class="skill-row" data-skill="${skill.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}"><div class="skill-topline"><span class="skill-logo" aria-hidden="true"><span>${skill.mark}</span></span><span class="skill-level">${skill.level}</span></div><div class="skill-name"><h3>${skill.name}</h3><p>${skill.detail}</p></div></article>`).join('');
 }
 
 function renderProjects() {
