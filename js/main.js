@@ -30,6 +30,8 @@ function updateText() {
     const key = element.dataset.site;
     if (current.site[key]) element.textContent = current.site[key];
   });
+  const stats = siteConfig.stats[activeLanguage] || siteConfig.stats.en;
+  document.querySelectorAll('[data-stat]').forEach((element) => { if (stats[element.dataset.stat]) element.textContent = stats[element.dataset.stat]; });
   const profile = document.querySelector('[data-profile-image]');
   if (profile) profile.src = siteConfig.profileImage;
   document.querySelector('[data-year]').textContent = new Date().getFullYear();
@@ -45,7 +47,7 @@ function renderProjects() {
 }
 
 function renderServices() {
-  const icons = ['◈', '⌁', '▦', '✦'];
+  const icons = ['◈', '⌁', '▦', '✦', '◫', '▣', '◇', '⌘'];
   document.querySelector('#services-list').innerHTML = current.ui.services.map((service, index) => `<article class="service-card"><span>${icons[index]}</span><b>0${index + 1}</b><h3>${service}</h3><p>${current.site.servicesIntro}</p></article>`).join('');
 }
 

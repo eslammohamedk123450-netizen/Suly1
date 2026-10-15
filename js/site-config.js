@@ -7,14 +7,18 @@ export const siteConfig = {
   theme: { ink: '#070711', navy: '#101027', violet: '#8b5cf6', indigo: '#312e81', lavender: '#c4b5fd', text: '#f8f7ff', muted: '#aba8c0' },
   contact: {
     email: 'your-email@example.com',
-    whatsapp: '',
+    whatsapp: 'https://wa.me/201093629700',
     github: '',
     linkedin: '',
-    instagram: '',
+    instagram: 'https://www.instagram.com/e___010__m?cplk=MW91Z25nNHpiN2Vhdg==',
     youtube: '',
     telegram: ''
   },
   profileImage: 'assets/images/profile.jpg',
+  stats: {
+    en: { demoProjects: '470', demoLabel: 'Demo projects', realProjects: '300', realLabel: 'Real working projects', pricing: 'Fair', pricingLabel: 'Competitive pricing', learning: '100%', learningLabel: 'Learning every language' },
+    ar: { demoProjects: '470', demoLabel: 'مشروع تجريبي', realProjects: '300', realLabel: 'مشروع حقيقي يعمل', pricing: 'مناسبة', pricingLabel: 'أسعار تنافسية', learning: '100%', learningLabel: 'تعلم مستمر لكل لغة' }
+  },
   translations: {
     en: {
       langName: 'English',
@@ -46,7 +50,7 @@ export const siteConfig = {
         home: 'Home', about: 'About', skills: 'Skills', projects: 'Projects', servicesLabel: 'Services', blog: 'Blog', contact: 'Contact',
         viewProjects: 'View My Projects', contactMe: 'Contact Me', viewSkills: 'View All Skills', featured: 'Featured', concept: 'Concept',
         learning: 'Learning / using', toolkit: 'Current toolkit', laptopStudy: 'THREE.JS STUDY', laptopLabel: 'FORM / LAPTOP', laptopCaption: 'Procedural laptop', moveLight: 'Move pointer to shift the light', conceptProjects: 'Concept projects', coreTechnologies: 'Core technologies', honestProgress: 'Honest progress', curiousMindset: 'Curious mindset', more: '+ More', available: 'Available', readMore: 'Read more', email: 'Email me', follow: 'Follow / connect',
-        services: ['Landing pages', 'Creative front-end', 'Responsive UI systems', 'Interactive experiments'],
+        services: ['Landing pages', 'Front-end development', 'Back-end development', 'Full-stack applications', 'Web apps & websites', 'Android apps', 'iOS apps', 'Systems & dashboards'],
         blogCards: [
           { title: 'Designing with intention', text: 'Why spacing, hierarchy, and restraint can make an interface feel confident.' },
           { title: 'Learning Three.js', text: 'Notes from building a procedural laptop scene for the web.' },
@@ -57,7 +61,17 @@ export const siteConfig = {
         { name: 'HTML', level: 'Learning / using', detail: 'Semantic structure', mark: '</>' },
         { name: 'CSS', level: 'Learning / using', detail: 'Responsive visual systems', mark: '#_' },
         { name: 'JavaScript', level: 'Learning / using', detail: 'Interactions & creative code', mark: 'JS' },
-        { name: 'Python', level: 'Learning / using', detail: 'Programming foundations', mark: 'Py' }
+        { name: 'Python', level: 'Learning / using', detail: 'Programming foundations', mark: 'Py' },
+        { name: 'React', level: 'Learning / using', detail: 'Component-based UI', mark: 'R' },
+        { name: 'Node.js', level: 'Learning / using', detail: 'Back-end JavaScript', mark: 'N' },
+        { name: 'SQL', level: 'Learning / using', detail: 'Data and queries', mark: 'DB' },
+        { name: 'PHP', level: 'Learning / using', detail: 'Web back-end foundations', mark: 'PHP' },
+        { name: 'Java', level: 'Learning / using', detail: 'Application foundations', mark: 'J' },
+        { name: 'Front-end', level: 'Available focus', detail: 'Web interfaces and UI', mark: 'FE' },
+        { name: 'Back-end', level: 'Available focus', detail: 'APIs and server logic', mark: 'BE' },
+        { name: 'Full-stack', level: 'Available focus', detail: 'End-to-end web apps', mark: 'FS' },
+        { name: 'Mobile apps', level: 'Available focus', detail: 'Android and iOS concepts', mark: 'APP' },
+        { name: 'Systems', level: 'Available focus', detail: 'Dashboards and workflows', mark: 'SYS' }
       ],
       projects: [
         { id: 'suly', title: 'Suly Academic Technology', category: 'Educational platform concept', label: 'Featured / 01', description: 'A calm academic space concept for lessons, progress, and focused learning.', detail: 'A demonstration exploring how an education platform could feel like a guided study room. Replace with real case-study details when deployed.', tags: ['HTML', 'CSS', 'Learning UX'], image: 'assets/images/project-suly.svg', liveUrl: '', sourceUrl: '' },
@@ -100,7 +114,7 @@ export const siteConfig = {
         home: 'الرئيسية', about: 'نبذة', skills: 'المهارات', projects: 'المشاريع', servicesLabel: 'الخدمات', blog: 'المدونة', contact: 'تواصل',
         viewProjects: 'شاهد مشاريعي', contactMe: 'تواصل معي', viewSkills: 'كل المهارات', featured: 'مميز', concept: 'مفهوم',
         learning: 'أتعلم / أستخدم', toolkit: 'التقنيات الحالية', laptopStudy: 'دراسة THREE.JS', laptopLabel: 'مجسم لابتوب', laptopCaption: 'لابتوب إجرائي', moveLight: 'حرّك المؤشر لتغيير الإضاءة', conceptProjects: 'مشاريع تجريبية', coreTechnologies: 'تقنيات أساسية', honestProgress: 'تقدم صادق', curiousMindset: 'عقل فضولي', more: '+ المزيد', available: 'متاح', readMore: 'اقرأ المزيد', email: 'راسلني', follow: 'تابعني / تواصل',
-        services: ['صفحات هبوط', 'واجهات إبداعية', 'أنظمة UI متجاوبة', 'تجارب تفاعلية'],
+        services: ['صفحات هبوط', 'تطوير Front-end', 'تطوير Back-end', 'تطبيقات Full-stack', 'مواقع وتطبيقات ويب', 'تطبيقات Android', 'تطبيقات iOS', 'أنظمة ولوحات تحكم'],
         blogCards: [
           { title: 'التصميم بقصد', text: 'كيف تجعل المسافات والتسلسل والاختصار الواجهة أكثر ثقة.' },
           { title: 'أتعلم Three.js', text: 'ملاحظات من بناء مشهد لابتوب إجرائي للويب.' },
@@ -111,7 +125,17 @@ export const siteConfig = {
         { name: 'HTML', level: 'أتعلم / أستخدم', detail: 'هيكلة دلالية', mark: '</>' },
         { name: 'CSS', level: 'أتعلم / أستخدم', detail: 'أنظمة بصرية متجاوبة', mark: '#_' },
         { name: 'JavaScript', level: 'أتعلم / أستخدم', detail: 'تفاعلات وكود إبداعي', mark: 'JS' },
-        { name: 'Python', level: 'أتعلم / أستخدم', detail: 'أساسيات البرمجة', mark: 'Py' }
+        { name: 'Python', level: 'أتعلم / أستخدم', detail: 'أساسيات البرمجة', mark: 'Py' },
+        { name: 'React', level: 'أتعلم / أستخدم', detail: 'واجهات قائمة على المكونات', mark: 'R' },
+        { name: 'Node.js', level: 'أتعلم / أستخدم', detail: 'JavaScript للـ Back-end', mark: 'N' },
+        { name: 'SQL', level: 'أتعلم / أستخدم', detail: 'البيانات والاستعلامات', mark: 'DB' },
+        { name: 'PHP', level: 'أتعلم / أستخدم', detail: 'أساسيات Back-end للويب', mark: 'PHP' },
+        { name: 'Java', level: 'أتعلم / أستخدم', detail: 'أساسيات التطبيقات', mark: 'J' },
+        { name: 'Front-end', level: 'مجال أعمل عليه', detail: 'واجهات ومواقع الويب', mark: 'FE' },
+        { name: 'Back-end', level: 'مجال أعمل عليه', detail: 'واجهات API ومنطق الخادم', mark: 'BE' },
+        { name: 'Full-stack', level: 'مجال أعمل عليه', detail: 'تطبيقات ويب متكاملة', mark: 'FS' },
+        { name: 'Mobile apps', level: 'مجال أعمل عليه', detail: 'مفاهيم Android وiOS', mark: 'APP' },
+        { name: 'Systems', level: 'مجال أعمل عليه', detail: 'لوحات التحكم وسير العمل', mark: 'SYS' }
       ],
       projects: [
         { id: 'suly', title: 'Suly Academic Technology', category: 'مفهوم منصة تعليمية', label: 'مميز / 01', description: 'مفهوم لمنصة أكاديمية تجمع الدروس والتقدم والتعلم الهادئ.', detail: 'تجربة تستكشف كيف يمكن لمنصة تعليمية أن تشبه غرفة دراسة موجهة. أضف تفاصيل دراسة الحالة الحقيقية عند النشر.', tags: ['HTML', 'CSS', 'تجربة تعليمية'], image: 'assets/images/project-suly.svg', liveUrl: '', sourceUrl: '' },
