@@ -63,11 +63,11 @@ function renderJourneyCompatibility() {
 function renderContact() {
   const { email, whatsapp, github, linkedin, instagram, youtube, telegram } = siteConfig.contact;
   const socialLabels = activeLanguage === 'ar' ? [['whatsapp', 'واتساب', '◌'], ['github', 'GitHub', '⌘'], ['linkedin', 'LinkedIn', 'in'], ['instagram', 'إنستغرام', '◎'], ['youtube', 'YouTube', '▶'], ['telegram', 'تيليجرام', '➤']] : [['whatsapp', 'WhatsApp', '◌'], ['github', 'GitHub', '⌘'], ['linkedin', 'LinkedIn', 'in'], ['instagram', 'Instagram', '◎'], ['youtube', 'YouTube', '▶'], ['telegram', 'Telegram', '➤']];
-  const links = [safeLink(`mailto:${email}`, email, '@')];
+  const links = email && email !== 'your-email@example.com' ? [safeLink(`mailto:${email}`, email, '@')] : [];
   socialLabels.forEach(([key, label, icon]) => {
-    links.push(siteConfig.contact[key] ? safeLink(siteConfig.contact[key], label, icon) : `<div class="contact-link is-placeholder"><span>${icon}</span><span>${label}</span><small>${activeLanguage === 'ar' ? 'أضف الرابط من ملف الإعداد' : 'Add URL in config'}</small><b>＋</b></div>`);
+    if (siteConfig.contact[key]) links.push(safeLink(siteConfig.contact[key], label, icon));
   });
-  document.querySelector('#contact-links').innerHTML = links.join('') || `<p class="contact-placeholder">${activeLanguage === 'ar' ? 'أضف روابط التواصل من js/site-config.js' : 'Add your contact links in js/site-config.js'}</p>`;
+  document.querySelector('#contact-links').innerHTML = links.join('') || `<p class="contact-placeholder">${activeLanguage === 'ar' ? 'سيتم إضافة روابط التواصل قريبًا.' : 'Contact links will be added soon.'}</p>`;
   document.querySelector('#rail-socials').innerHTML = [
     safeLink(github, 'GitHub', '⌘'), safeLink(linkedin, 'LinkedIn', 'in'), safeLink(instagram, 'Instagram', '◎'), safeLink(youtube, 'YouTube', '▶'), safeLink(whatsapp, 'WhatsApp', '◌')
   ].filter(Boolean).map((link) => link.replace('class="contact-link"', 'class="rail-social"')).join('');
