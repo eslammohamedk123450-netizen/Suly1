@@ -16,6 +16,8 @@ function setTextAttributes() {
     const key = element.dataset.site;
     if (siteConfig.site[key]) element.textContent = siteConfig.site[key];
   });
+  const profileImage = document.querySelector('[data-profile-image]');
+  if (profileImage) profileImage.src = siteConfig.site.profileImage;
   document.querySelector('[data-year]').textContent = new Date().getFullYear();
 }
 
