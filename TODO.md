@@ -1,0 +1,11 @@
+# Delivery outcomes
+
+- [ ] **Static portfolio shell:** Provide a complete single-page portfolio with semantic HTML, accessible navigation for Home, About, Expertise, Projects, Journey, and Contact, a responsive mobile menu, active-section indicator, smooth anchors, keyboard controls, metadata, favicon, footer, and dynamic copyright year.
+- [ ] **Hero and truthful positioning:** Show “Hello, I’m Islam.”, “ESLAM MOHAMED”, “Developer & Digital Creator”, an editable truthful description, Explore My Work and Get in Touch CTAs, a subtle scroll indicator, and a scene that remains secondary to the copy.
+- [ ] **Procedural Three.js scene:** Render real procedural geometry with metallic materials, cinematic lighting, slow idle animation, subtle pointer response, responsive camera/device quality, cleanup, and a graceful WebGL/CDN failure fallback.
+- [ ] **Editable content system:** Keep name, role, descriptions, profile image path, about copy, skills, projects, social/contact links, theme colors, and language settings in `js/site-config.js`; document all edits in the README.
+- [ ] **Expertise and project gallery:** Render configurable HTML, CSS, JavaScript, and Python entries without claiming expertise; render at least the three requested concept/demo projects with descriptions, categories, tags, thumbnails, optional links, and a detailed modal view.
+- [ ] **Journey and contact:** Render an editable timeline with clearly marked example placeholders; provide configurable email, WhatsApp, GitHub/social links, polished contact CTA, and no fake message submission form.
+- [ ] **Motion and accessibility:** Include staged hero entrance, text/section reveals, project hover states, button feedback, smooth navigation, 3D parallax, consistent timing, focus styles, touch-friendly controls, `prefers-reduced-motion`, and no horizontal overflow.
+- [ ] **GitHub Pages compatibility:** Use relative paths, browser-safe ES modules/CDN imports, no runtime server dependency, a route manifest, a 404 page, documented CDN dependency, and no secrets.
+- [ ] **QA and delivery:** Validate source syntax and referenced files, test the preview at desktop/mobile sizes, inspect the browser console, verify missing-image and WebGL fallbacks, create and extract `eslam-portfolio.zip`, and document tests and limitations.

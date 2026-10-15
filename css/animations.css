@@ -1,0 +1,25 @@
+.hero-eyebrow, .hero-title, .hero-role, .hero-intro, .hero-actions, .hero-meta { opacity: 0; transform: translateY(24px); animation: rise-in .85s var(--ease) forwards; }
+.hero-eyebrow { animation-delay: .14s; }
+.hero-title { animation-delay: .22s; }
+.hero-role { animation-delay: .34s; }
+.hero-intro { animation-delay: .43s; }
+.hero-actions { animation-delay: .52s; }
+.hero-meta { animation-delay: .64s; }
+.stage-index, .stage-caption { opacity: 0; animation: fade-in 1s ease .8s forwards; }
+.hero-foot { opacity: 0; animation: fade-in 1s ease 1s forwards; }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .85s var(--ease), transform .85s var(--ease); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: .12s; }
+.reveal-delay-2 { transition-delay: .22s; }
+@keyframes rise-in { to { opacity: 1; transform: translateY(0); } }
+@keyframes fade-in { to { opacity: 1; } }
+@keyframes slow-pulse { 0%, 100% { opacity: .5; transform: scale(1); } 50% { opacity: .88; transform: scale(1.05); } }
+.fallback-core { animation: slow-pulse 7s ease-in-out infinite; }
+.fallback-orbit-a { animation: orbit-a 16s linear infinite; }
+.fallback-orbit-b { animation: orbit-b 20s linear infinite; }
+@keyframes orbit-a { to { transform: rotate(413deg); } }
+@keyframes orbit-b { to { transform: rotate(-397deg); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
